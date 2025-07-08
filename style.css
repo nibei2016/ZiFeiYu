@@ -1,11 +1,17 @@
 body {
   font-family: "KaiTi", serif;
-  background: #111 url('https://img1.doubanio.com/view/photo/l/public/p3026593469.webp') no-repeat center center fixed;
+  background-color: #111;
+  background-image: url('https://raw.githubusercontent.com/nibei2016/ZiFeiYu/main/img/background.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   color: #fff8dc;
   text-align: center;
   padding: 2em;
 }
+
+
 
 h2 {
   font-size: 1.8em;
