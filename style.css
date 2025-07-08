@@ -11,7 +11,10 @@ body {
   padding: 2em;
 }
 
-
+#create-character h2,
+#create-character p {
+  color: black;
+}
 
 h2 {
   font-size: 1.8em;
