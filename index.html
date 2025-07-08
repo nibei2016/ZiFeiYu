@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>子非鱼</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>修仙模拟器</h1>
-  <div id="info">
-    <p>当前境界：<span id="realm">练气</span></p>
-    <p>灵力值：<span id="energy">0</span></p>
+  <div id="create-character">
+    <h2>天地初开，道心萌生</h2>
+    <p>请赐予你的修仙者一个名字：</p>
+    <input type="text" id="charName" placeholder="如：潇潇暮雨" />
+    <br>
+    <button onclick="rollAttributes()">凝神感悟，天赋显现</button>
+    <div id="attributes"></div>
+    <button onclick="startGame()">踏入修仙之路</button>
   </div>
 
-  <div class="buttons">
-    <button onclick="train()">开始修炼</button>
-    <button onclick="breakthrough()">突破境界</button>
-    <button onclick="reset()">重置</button>
+  <div id="game" style="display:none;">
+    <h2 id="welcome"></h2>
+    <p>当前境界：<span id="realm"></span></p>
+    <p>灵力值：<span id="energy"></span></p>
+    <div>
+      <button onclick="meditate(1)">修炼一日</button>
+      <button onclick="meditate(7)">闭关七天</button>
+      <button onclick="breakthrough()">尝试突破</button>
+      <button onclick="studyTechnique()">修炼功法</button>
+      <button onclick="reset()">重修此生</button>
+    </div>
+    <hr>
+    <div id="story-log" class="log"></div>
+    <div id="event-box"></div>
   </div>
 
   <script src="main.js"></script>

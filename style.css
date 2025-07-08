@@ -1,18 +1,32 @@
 body {
-  font-family: "微软雅黑", sans-serif;
-  background: #fdf6e3;
-  color: #333;
+  font-family: "KaiTi", serif;
+  background: #111 url('https://img1.doubanio.com/view/photo/l/public/p3026593469.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff8dc;
   text-align: center;
-  padding: 40px;
+  padding: 2em;
 }
 
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+h2 {
+  font-size: 1.8em;
 }
-
-.buttons button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
+input, button {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  background-color: #4b3f2f;
+  color: #fff8dc;
+}
+#story-log {
+  text-align: left;
+  background: rgba(0,0,0,0.4);
+  padding: 1em;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 1em;
 }
