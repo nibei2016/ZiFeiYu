@@ -16,6 +16,22 @@ body {
   color: black;
 }
 
+#game {
+  color: black;
+}
+
+#welcome {
+  color: black;
+}
+
+  
+#story-log {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+
 h2 {
   font-size: 1.8em;
 }
